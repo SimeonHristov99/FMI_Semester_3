@@ -8,4 +8,4 @@ Create a dynamic array and implement the following methods:
 	5. pop_front;
 	6. insertElement(position, element);
 	7. getSize;
-	8. print;
+	8. print.
