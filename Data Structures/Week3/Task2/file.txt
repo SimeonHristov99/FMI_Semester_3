@@ -1,0 +1,3 @@
+Maria - 1
+John - 2
+Toby = 0
