@@ -1,3 +1,3 @@
 # Tasks
 
-Task1: Make a linked implementation of a stack.
+Task1: Make a linked implementation of a stack using a template.
