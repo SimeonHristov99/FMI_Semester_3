@@ -41,7 +41,7 @@ private:
 		m_data = data;
 	}
 
-	// Not needed if copying is forbidden.
+	// No need for a separate function if copying is forbidden.
 	void del()
 	{
 		delete[] m_data;
