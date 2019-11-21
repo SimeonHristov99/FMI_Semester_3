@@ -9,6 +9,7 @@ Task3: Evaluate a mathematical expression written in reverse polish notation.
 Task4: Evaluate an expression in infix notation using the Shunting Yard Algorithm.
 
 Task5: Given an expression with the following grammar
+
  formula = digit | operation(formula, formulas)
  formulas = formula | formula, formulas
  operation = + | *
