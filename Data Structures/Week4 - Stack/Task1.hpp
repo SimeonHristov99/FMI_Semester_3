@@ -29,21 +29,19 @@ public:
 	void pop();
 
 	T top() const;
-
-	T& top();
 };
 
 template<class T>
 inline void Stack<T>::resize()
 {
-	m_capacity *= 2;
-
-	T* data = new T[m_capacity];
+	T* data = new T[m_capacity * 2];
 
 	for (size_t i = 0; i < m_tos; i++)
 	{
 		data[i] = m_data[i];
 	}
+
+	m_capacity *= 2;
 
 	delete[] m_data;
 	m_data = data;
@@ -93,12 +91,6 @@ inline void Stack<T>::pop()
 
 template<class T>
 inline T Stack<T>::top() const
-{
-	return m_data[m_tos - 1];
-}
-
-template<class T>
-inline T& Stack<T>::top()
 {
 	return m_data[m_tos - 1];
 }
