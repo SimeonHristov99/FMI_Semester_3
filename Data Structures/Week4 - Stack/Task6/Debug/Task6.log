@@ -1,8 +1,0 @@
-﻿  Task6.cpp
-C:\Users\Work\source\repos\FMI_Semester_3\Data Structures\Week4 - Stack\Task6\Stack.hpp(39,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Work\source\repos\FMI_Semester_3\Data Structures\Week4 - Stack\Task6\Stack.hpp(36): message : while compiling class template member function 'void Stack<int>::resize(void)'
-C:\Users\Work\source\repos\FMI_Semester_3\Data Structures\Week4 - Stack\Task6\Stack.hpp(80): message : see reference to function template instantiation 'void Stack<int>::resize(void)' being compiled
-C:\Users\Work\source\repos\FMI_Semester_3\Data Structures\Week4 - Stack\Task6\Stack.hpp(52): message : while compiling class template member function 'Stack<int>::Stack(void)'
-C:\Users\Work\source\repos\FMI_Semester_3\Data Structures\Week4 - Stack\Task6\Task6.cpp(6): message : see reference to function template instantiation 'Stack<int>::Stack(void)' being compiled
-C:\Users\Work\source\repos\FMI_Semester_3\Data Structures\Week4 - Stack\Task6\Task6.cpp(6): message : see reference to class template instantiation 'Stack<int>' being compiled
-  Task6.vcxproj -> C:\Users\Work\source\repos\FMI_Semester_3\Data Structures\Week4 - Stack\Task6\Debug\Task6.exe
