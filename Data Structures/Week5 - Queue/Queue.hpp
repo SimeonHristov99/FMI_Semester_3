@@ -13,7 +13,7 @@ private:
 	T* m_data;
 
 	void resize();
-	unsigned next(unsigned index);
+	size_t next(size_t index) const;
 
 public:
 	Queue();
@@ -21,8 +21,8 @@ public:
 	Queue& operator=(const Queue& rhs) = delete;
 	~Queue();
 
-	bool is_empty();
-	bool is_full();
+	bool is_empty() const;
+	bool is_full() const;
 
 	void enqueue(const T& element);
 	void dequeue();
@@ -52,7 +52,7 @@ inline void Queue<T>::resize()
 }
 
 template<class T>
-inline unsigned Queue<T>::next(unsigned index)
+inline size_t Queue<T>::next(size_t index) const
 {
 	return (index + 1) % m_capacity;
 }
@@ -72,13 +72,13 @@ inline Queue<T>::~Queue()
 }
 
 template<class T>
-inline bool Queue<T>::is_empty()
+inline bool Queue<T>::is_empty() const
 {
 	return m_first == m_last;
 }
 
 template<class T>
-inline bool Queue<T>::is_full()
+inline bool Queue<T>::is_full() const
 {
 	return (m_last + 1) % m_capacity == m_first;
 }
