@@ -35,7 +35,7 @@ inline void Queue<T>::resize()
 {
 	T* data = new T[m_capacity * 2];
 
-	for (size_t i = 0; i < m_capacity; i++)
+	for (size_t i = 0; i < m_capacity - 1; i++)
 	{
 		data[i] = m_data[m_first];
 
