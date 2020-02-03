@@ -109,11 +109,13 @@ bool AVL::insert(unsigned value, Node*& node)
 		return false;
 	}
 
-	return node->m_value > value ? insert(value, node->m_left) : insert(value, node->m_right);
+	node->m_value > value ? insert(value, node->m_left) : insert(value, node->m_right);
 
 	update(node);
 
 	node = balance(node);
+
+	return true;
 }
 
 void AVL::print(Node* node) const
