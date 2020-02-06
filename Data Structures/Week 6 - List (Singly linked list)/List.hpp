@@ -13,10 +13,7 @@ private:
 			: m_data(data),
 			m_next(next)
 		{ }
-	};
-	
-	Node* m_first;
-	Node* m_last;
+	} *m_first, *m_last;
 
 	size_t m_size;
 
@@ -56,13 +53,14 @@ public:
 template<class T>
 inline void List<T>::copy(const List& rhs)
 {
-	m_size = 0;
+	m_size = 0;	
 	m_first = m_last = nullptr;
 
 	Node* current = rhs.m_first;
-	while (current != nullptr)
+
+	if (current)
 	{
-		insert_last(current->m_data);
+		insert_last(current->m_value);
 		current = current->m_next;
 	}
 }

@@ -4,28 +4,13 @@
 void List::copy(const List& rhs)
 {
 	m_first = m_last = nullptr;
-	
-	if (rhs.m_first)
+
+	Node* current = rhs.m_first;
+
+	if (current)
 	{
-		Node* current = rhs.m_first;
-
-		m_first = new Node(current->m_value, m_first);
-		m_last = m_first;
-
+		push_back(current->m_value);
 		current = current->m_next;
-
-		if (current)
-		{
-			m_last = new Node(current->m_value, nullptr);
-			m_first->m_next = m_last;
-			current = current->m_next;
-		}
-
-		while (current)
-		{
-			push_back(current->m_value);
-			current = current->m_next;
-		}
 	}
 }
 
