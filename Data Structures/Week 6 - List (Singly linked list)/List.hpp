@@ -58,7 +58,7 @@ inline void List<T>::copy(const List& rhs)
 
 	Node* current = rhs.m_first;
 
-	if (current)
+	while (current)
 	{
 		insert_last(current->m_value);
 		current = current->m_next;

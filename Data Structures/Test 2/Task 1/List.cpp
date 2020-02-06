@@ -7,7 +7,7 @@ void List::copy(const List& rhs)
 
 	Node* current = rhs.m_first;
 
-	if (current)
+	while (current)
 	{
 		push_back(current->m_value);
 		current = current->m_next;
